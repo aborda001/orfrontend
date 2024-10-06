@@ -4,7 +4,7 @@ import Ts from './Pages/ts';
 import Ts1 from './Pages/ts1';
 import Ts3 from './Pages/ts3';
 import Ts4 from './Pages/ts4';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
