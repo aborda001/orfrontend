@@ -1,0 +1,32 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-button {
+    width: 40vw;
+    margin: 10px 0;
+    font-size: 3vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 169);
+    transition: font-size 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .custom-button {
+        width: 80vw;
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-button {
+        width: 40vw;
+        font-size: 3vw;
+    }
+}
