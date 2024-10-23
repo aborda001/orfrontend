@@ -22,7 +22,7 @@ const ExercicesAction = ({ name, video, videoName, isValid }) => {
                 isValid ?
                     <h2>¡Ejercicio realizado correctamente!</h2>
                     :
-                    <h2>¡Ejercicio no realizado correctamente!</h2>
+                    <h2>¡Ejercicio realizado incorrectamente!</h2>
             }
         </div>
     );
