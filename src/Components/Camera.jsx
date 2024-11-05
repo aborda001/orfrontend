@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Camera = ({ onHandleResponse }) => {
+const Camera = ({ onHandleResponse, exercise }) => {
 
     const [video, setVideo] = useState(null)
 
@@ -12,6 +12,7 @@ const Camera = ({ onHandleResponse }) => {
         e.preventDefault()
         const formData = new FormData()
         formData.append('video', video)
+        formData.append('exercise', exercise)
         fetch('http://localhost:5000/upload', {
             method: 'POST',
             body: formData,

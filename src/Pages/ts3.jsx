@@ -42,6 +42,7 @@ const Ts3 = () => {
                             name='Press de hombros'
                         />
                         <Camera
+                            exercise='ts3'
                             onHandleResponse={handleResponse}
                         />
                     </>
@@ -52,7 +53,6 @@ const Ts3 = () => {
                         videoName={response.newVideo}
                         isValid={response.isVideoValid}
                     />
-
             }
 
         </>

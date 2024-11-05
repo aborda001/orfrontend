@@ -3,9 +3,9 @@ import ExerciseTest from '../Components/ExerciseTest'
 import ExerciseAction from '../Components/ExerciseAction'
 import Camera from '../Components/Camera'
 
-import gif from '../Media/Exercices/ts1.gif'
+import gif from '../Media/Exercices/ts2.gif'
 
-const Ts1 = () => {
+const Ts3 = () => {
     const isExercise = useState(false)
     const [response, setResponse] = useState({
         isSuccessful: false,
@@ -25,14 +25,13 @@ const Ts1 = () => {
     }, 5000)
 
 
-
     return (
         <>
             {!isExercise[0] ?
                 <>
                     <ExerciseTest
                         gif={gif}
-                        alt='Flexiones de brazos'
+                        alt='Dominadas'
                         name='Demostración del ejercicio'
                     />
                 </>
@@ -40,16 +39,16 @@ const Ts1 = () => {
                 !response.isSuccessful ?
                     <>
                         <ExerciseAction
-                            name='Flexiones de brazos'
+                            name='Remos con peso'
                         />
                         <Camera
-                            exercise='ts1'
+                            exercise='ts2'
                             onHandleResponse={handleResponse}
                         />
                     </>
                     :
                     <ExerciseAction
-                        name='Flexiones de brazos'
+                        name='Remos con peso'
                         video={true}
                         videoName={response.newVideo}
                         isValid={response.isVideoValid}
@@ -59,4 +58,4 @@ const Ts1 = () => {
     )
 }
 
-export default Ts1
+export default Ts3
