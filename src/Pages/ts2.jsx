@@ -39,7 +39,7 @@ const Ts3 = () => {
                 !response.isSuccessful ?
                     <>
                         <ExerciseAction
-                            name='Remos con peso'
+                            name='Dominadas'
                         />
                         <Camera
                             exercise='ts2'
@@ -48,10 +48,10 @@ const Ts3 = () => {
                     </>
                     :
                     <ExerciseAction
-                        name='Remos con peso'
+                        name='Dominadas'
                         video={true}
                         videoName={response.newVideo}
-                        isValid={response.isVideoValid}
+                        isValid={false}
                     />
             }
         </>

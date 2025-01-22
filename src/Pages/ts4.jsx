@@ -50,9 +50,9 @@ const Ts4 = () => {
                     :
                     <ExerciseAction
                         name='Remos con peso'
-                        video={true}
+                        video={false}
                         videoName={response.newVideo}
-                        isValid={response.isVideoValid}
+                        isValid={false}
                     />
             }
         </>

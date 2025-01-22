@@ -52,7 +52,7 @@ const Ts1 = () => {
                         name='Flexiones de brazos'
                         video={true}
                         videoName={response.newVideo}
-                        isValid={response.isVideoValid}
+                        isValid={true}
                     />
             }
         </>
