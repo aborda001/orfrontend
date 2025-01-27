@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import VideoPlayer from "../Components/VideoPlayer";
 
+// import ReactCamera from "./ReactCamera";
+
 const ExercicesAction = ({ name, video, videoName, isValid, message = "" }) => {
   const [finalized, setFinalized] = useState(false);
   const [notify, setNotify] = useState({
@@ -32,6 +34,14 @@ const ExercicesAction = ({ name, video, videoName, isValid, message = "" }) => {
     <div style={styles.container}>
       <h2>{name}</h2>
 
+      {/* <ReactCamera /> */}
+
+      { !video && 
+        <div style= {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+          <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" style={styles.gif} alt="gif" />
+        </div>
+      }
+
       {video && <VideoPlayer url={videoName} onHandleVideo={handleFinalized} />}
       {!finalized ? (
         <h2>Realiza el ejercicio</h2>
@@ -47,9 +57,7 @@ const ExercicesAction = ({ name, video, videoName, isValid, message = "" }) => {
         </>
       )}
 
-      {video && notify.notify && !finalized && (
-        <h2>{notify.message}</h2>
-      )}
+      {video && notify.notify && !finalized && <h2>{notify.message}</h2>}
     </div>
   );
 };

@@ -27,18 +27,18 @@ const Ts3 = () => {
         <>
           <ExerciseTest
             gif={gif}
-            alt="Remos con peso"
+            alt="Press de hombros"
             name="Demostración del ejercicio"
           />
         </>
       ) : !response.isSuccessful ? (
         <>
-          <ExerciseAction name="Remos con peso" />
+          <ExerciseAction name="Press de hombros" />
           <Camera exercise="ts3" onHandleResponse={handleResponse} />
         </>
       ) : (
         <ExerciseAction
-          name="Remos con peso"
+          name="Press de hombros"
           video={true}
           videoName={response.newVideo}
           isValid={response.isVideoValid}
