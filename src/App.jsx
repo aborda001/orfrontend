@@ -10,11 +10,30 @@ import Ts1 from './Pages/ts1';
 import Ts2 from './Pages/ts2';
 import Ts3 from './Pages/ts3';
 import Ts4 from './Pages/ts4';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
     <>
+      <>
+        <button className="custom-button" style={{ maxWidth: "5rem",
+          position: "fixed",
+          top: "0",
+          left: "0",
+          zIndex: "1000",
+          backgroundColor: "white",
+          border: "1px solid black",
+          borderRadius: "5px",
+          margin: "10px",
+          padding: "5px",
+          fontSize: "1.5rem",
+          fontWeight: "bold",
+          color: "black",
+          textDecoration: "none"
+         }} >
+          <a href="/">&#x2B05;</a>
+        </button>
+      </>
       <Router>
         <Routes>
           <Route path="/" element={<Index />} />
