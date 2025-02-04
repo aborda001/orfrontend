@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import VideoPlayer from "../Components/VideoPlayer";
 
-// import ReactCamera from "./ReactCamera";
+import ReactCamera from "./ReactCamera";
 
 const ExercicesAction = ({ name, video, videoName, isValid, message = "" }) => {
   const [finalized, setFinalized] = useState(false);
@@ -34,7 +34,7 @@ const ExercicesAction = ({ name, video, videoName, isValid, message = "" }) => {
     <div style={styles.container}>
       <h2>{name}</h2>
 
-      {/* <ReactCamera /> */}
+      <ReactCamera />
 
       { !video && 
         <div style= {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
